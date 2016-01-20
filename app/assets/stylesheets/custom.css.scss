@@ -3,11 +3,13 @@
 @import "font-awesome-sprockets";
 @import "font-awesome";
 
+/* Site Wide Styles */
 body {
-    // Gradient from http://uigradients.com/ (Midnight City)
-    background: #232526; /* fallback for old browsers */
-    background: -webkit-linear-gradient(to left, #232526 , #414345); /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to left, #232526 , #414345); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    // Gradient from http://uigradients.com/ (Clouds)
+    background: #ECE9E6; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #ECE9E6 , #FFFFFF); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #ECE9E6 , #FFFFFF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color: #9d9d9d;
 }
 
 
@@ -24,3 +26,11 @@ body {
 //     background: -webkit-linear-gradient(to left, #232526 , #414345); /* Chrome 10-25, Safari 5.1-6 */
 //     background: linear-gradient(to left, #232526 , #414345); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 // }
+
+/* Site Wide Typography */
+
+
+/* Contact Form Typography */
+#well_contact {
+    background: #E0E0E0;
+}

@@ -11,6 +11,12 @@ body {
     background: linear-gradient(to left, #ECE9E6 , #FFFFFF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
+.alert-notice {
+    color: #31708f;
+    background-color: #d9edf7;
+    border-color: #bce8f1;
+}
+
 /* Forms Well and jumbotron */
 .well,
 .jumbotron {background: #E0E0E0; }

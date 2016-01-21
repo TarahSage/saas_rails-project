@@ -1,20 +1,20 @@
-<div class="jumbotron text-center">
+<div class='jumbotron text-center'>
   <h1>Welcome to SaaS-Template</h1> 
   <h3>A membership site where developers can meet, chat, and share their work.</h3>
 </div>
-<div class="row">
-  <div class="col-md-6">
-    <div class="well">
-      <h2 class="text-center">Basic Membership</h2>
+<div class='row'>
+  <div class='col-md-6'>
+    <div class='well'>
+      <h2 class='text-center'>Basic Membership</h2>
       <h4>Sign up for free and get basic access to our developer community!</h4>
-      <%= link_to "Give me Basic!", new_user_registration_path(plan: @basic_plan.id), class: "btn btn-primary btn-lg btn-block" %>
+      <%= link_to 'Give me Basic!', new_user_registration_path(plan: @basic_plan.id), class: 'btn btn-primary btn-lg btn-block' %>
     </div>
   </div>
-  <div class="col-md-6">
-    <div class="well">
-      <h2 class="text-center">Pro Membership</h2>
+  <div class='col-md-6'>
+    <div class='well'>
+      <h2 class='text-center'>Pro Membership</h2>
       <h4>Sign up for the Pro account for $10/month and get full access to the community plus our exclusive Pro features!</h4>
-      <%= link_to "I want Pro!", new_user_registration_path(plan: @pro_plan.id), class: "btn btn-success btn-lg btn-block" %>
+      <%= link_to 'I want Pro!', new_user_registration_path(plan: @pro_plan.id), class: 'btn btn-success btn-lg btn-block' %>
     </div>
   </div>
 </div>

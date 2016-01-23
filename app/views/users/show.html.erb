@@ -1,8 +1,20 @@
-<%= image_tag @user.profile.avatar.url %><br/>
-<%= @user.profile.first_name %> <%= @user.profile.last_name%> <br/>
-<%= @user.profile.job_title  %><br/>
-<% if current_user.plan_id == 2 %>
-  <%= @user.profile.phone_number  %><br/>
-  <%= @user.profile.contact_email  %><br/>
-<% end %>
-<%= @user.profile.description  %>
+<div class="row">
+  <div class="col-md-3 text-center">
+    <%= image_tag @user.profile.avatar.url, class: "avatar-profile" %>
+  </div>
+  <div class="col-md-6">
+    <h1><%= @user.profile.first_name %> <%= @user.profile.last_name%> <br/></h1>
+    <h3><span class="job_title_icon"><%= job_title_icon %></span> <%= @user.profile.job_title  %><br/></h3> 
+    <div class="well profile-block profile-description">
+      <h3>Description</h3>
+     <%= @user.profile.description  %>
+    </div>
+    <% if true #current_user.plan_id == 2 %>
+      <div class="well profile-block contact-info">
+        <h3>Contact Info</h3>
+        <p>Phone Number: <%= @user.profile.phone_number  %></p>
+        <p>Contact Email: <%= @user.profile.contact_email  %></p>
+      </div>
+    <% end %>
+  </div>
+</div>

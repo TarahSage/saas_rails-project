@@ -1,45 +1,45 @@
 
 
-<div class='jumbotron text-center'>
+<div class="jumbotron text-center">
   <h1>Welcome to SaaS-Template</h1> 
   <h3>A template for a membership site where developers can meet, chat, and share their work.</h3>
 </div>
-<div class='row'>
+<div class="row">
   <% if user_signed_in? %>
-    <div class='col-md-6'>
-      <div class='well'>
+    <div class="col-md-6">
+      <div class="well">
         <% if current_user.profile %>
-          <h2 class='text-center'>Your Profile</h2>
-          <%= link_to 'Edit Your Profile', edit_user_profile_path(current_user), class: 'btn btn-default btn-lg btn-block' %>
-          <%= link_to 'View Your Profile', user_path(current_user), class: 'btn btn-default btn-lg btn-block' %>
+          <h2 class="text-center">Your Profile</h2>
+          <%= link_to "Edit Your Profile", edit_user_profile_path(current_user), class: "btn btn-default btn-lg btn-block" %>
+          <%= link_to "View Your Profile", user_path(current_user), class: "btn btn-default btn-lg btn-block" %>
         <% else %>
           <p>Create your profile so that you can share your information with the community</p>
-          <%= link_to 'Create Your Profile', new_user_profile_path(current_user), class: 'btn btn-default btn-lg btn-block' %>
+          <%= link_to "Create Your Profile", new_user_profile_path(current_user), class: "btn btn-default btn-lg btn-block" %>
         <% end %>
       </div>
     </div>
     
-    <div class='col-md-6'>
-      <div class='well'>
-        <h2 class='text-center'>The Community</h2>
-        <p class='text-center'>Visit the community to meet other developers!</p>
-        <%= link_to "Visit the community", users_path, class: 'btn btn-default btn-lg btn-block' %>
+    <div class="col-md-6">
+      <div class="well">
+        <h2 class="text-center">The Community</h2>
+        <p class="text-center">Visit the community to meet other developers!</p>
+        <%= link_to "Visit the community", users_path, class: "btn btn-default btn-lg btn-block" %>
       </div>
     </div>
     
   <% else %>
-  <div class='col-md-6'>
-    <div class='well'>
-      <h2 class='text-center'>Basic Membership</h2>
+  <div class="col-md-6">
+    <div class="well">
+      <h2 class="text-center">Basic Membership</h2>
       <h4>Sign up for free and get basic access to our developer community!</h4>
-      <%= link_to 'Give me Basic!', new_user_registration_path(plan: @basic_plan.id), class: 'btn btn-primary btn-lg btn-block' %>
+      <%= link_to "Give me Basic!", new_user_registration_path(plan: @basic_plan.id), class: "btn btn-primary btn-lg btn-block" %>
     </div>
   </div>
-  <div class='col-md-6'>
-    <div class='well'>
-      <h2 class='text-center'>Pro Membership</h2>
+  <div class="col-md-6">
+    <div class="well">
+      <h2 class="text-center">Pro Membership</h2>
       <h4>Sign up for the Pro account for $10/month and get full access to the community plus our exclusive Pro features!</h4>
-      <%= link_to 'I want Pro!', new_user_registration_path(plan: @pro_plan.id), class: 'btn btn-success btn-lg btn-block' %>
+      <%= link_to "I want Pro!", new_user_registration_path(plan: @pro_plan.id), class: "btn btn-success btn-lg btn-block" %>
     </div>
   </div>
   <% end %>
